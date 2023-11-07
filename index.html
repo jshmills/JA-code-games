@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Overview</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        
+        .hidden {
+            display: none;
+        }
+        
+        nav {
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        #htmlchallenge { 
+            /* your code */
+            background-image: url('./images/hawksbill_sea_turtle.jpg');
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+
+        #htmlchallenge h2 {
+            color: white;
+        }
+        
+
+        .binarycontainer {
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 400px;
+        }        
+        
+        #hardcss1 {
+            /* your code */
+        }
+
+        #hardcss2 {
+            /* color: green; */
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">CSS Challenges</a>
+                    <ul>
+                        <li><a href="">Just for fun - Make Navigation Menu stick to top of page</a></li>
+                        <li><a href="#easycss">CSS Easy Challenge</a></li>
+                        <li><a href="#banner">CSS intermediate Challenge</a></li>
+                        <li><a href="#hardcsschallenge1">CSS Hard Challenge</a></li>
+                        <li><a href="#hardcsschallenge2">CSS Hard Challenge #2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#slider">Javascript Challenge</a></li>
+                <li><a href="#binary">Binary Challenge</a></li>
+                <li><a href="./pages/encryption-demo.html">Encryption Demo</a></li>
+            </ul>
+        </nav>
+        <div id="banner" style="background-image: url('./images/banner.jpg');">
+            <h1>Intermediate Challenge: Try to Center this banner horizontally and vertically</h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <h1>Introduction to Web Development</h1>
+        
+        <p>Web development is the process of creating websites and web applications. It encompasses various aspects including:</p>
+        
+        <h2>Front-End Development</h2>
+        <p><strong>Front-end development</strong> focuses on what users interact with in a web browser. It involves:</p>
+        <ul>
+            <li>HTML (HyperText Markup Language) - structure and content</li>
+            <li>CSS (Cascading Style Sheets) - design and layout</li>
+            <li>JavaScript - adding interactivity and functionality</li>
+        </ul>
+        
+        <h2>Back-End Development</h2>
+        <p><strong>Back-end development</strong> powers the functionalities behind the scenes. It involves:</p>
+        <ul>
+            <li>Server-side scripting languages like PHP, Python, Ruby, etc.</li>
+            <li>Database systems (e.g., MySQL, MongoDB) for data storage</li>
+            <li>Frameworks and libraries for building and managing applications</li>
+        </ul>
+        
+        <h2>Full-Stack Development</h2>
+        <p><strong>Full-stack developers</strong> work on both the front-end and back-end, handling the entire web development process.</p>
+        
+        <h2>Responsive Design and Accessibility</h2>
+        <p>Developers aim for <strong>responsive design</strong> to ensure websites work well on various devices. Additionally, <strong>accessibility</strong> focuses on making websites usable for all users, including those with disabilities.</p>
+        
+        <section id="htmlchallenge" style="background-image: url('./images/earthrise.jpg');">
+            <h2>Turn the background to a turtle (The image already exists)</h2>
+        </section>
+        
+        <section class="section" id="easycss">
+            <h2>Easy CSS Challenge</h2>
+            <p>Make every other one red.</p>
+
+            <style>
+                #easyCssTwo {
+                    /*  your code */
+                }
+            </style>
+
+            <ul id="easyCssTwo">
+                <li class="red">Red</li>
+                <li>Green</li>
+                <li class="red">Red</li>
+                <li>Green</li>
+                <li class="red">Red</li>
+                <li>Green</li>
+            </ul>
+        </section>
+        
+        <section class="section" id="hardcsschallenge1">
+            <h2 style="text-align:center">Hard CSS Challenge</h2>
+
+            <ul id="hardcss1">
+                <li>Make me green
+                    <ul>
+                        <li>But not me</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="hardcsschallenge2">
+            <h2 style="text-align:center">Hard CSS Challenge #2</h2>
+
+            <div id="hardcss2">
+                <h3>Header</h3>
+                <h4>Make Us Green in as few styles as possible</h4>
+
+                <h3>Header</h3>
+                <h5>Make Us Green in as few styles as possible</h5>
+            </div>
+               
+        </section>
+
+        <section class="section" id="binary">
+            <h2>Binary Challenge</h2>
+            <h3>Steps to Convert Decimal to Binary:</h3>
+            <ol>
+                <li>Repeated Division: Start by dividing the number by 2 and noting the remainder.</li>
+                <li>Repeat the Division: Continue dividing the quotient by 2 until the quotient becomes 0.</li>
+                <li>Read the Remainders: The remainders will provide the binary number in reverse order.</li>
+            </ol>
+
+            <h3>Example: Convert the decimal number 23 to binary:</h3>
+            <ol>
+                <li>Step 1: Divide 23 by 2. The quotient is 11, and the remainder is 1. (23 ÷ 2 = 11 remainder 1)</li>
+                <li>Step 2: Divide 11 by 2. The quotient is 5, and the remainder is 1. (11 ÷ 2 = 5 remainder 1)</li>
+                <li>Step 3: Divide 5 by 2. The quotient is 2, and the remainder is 1. (5 ÷ 2 = 2 remainder 1)</li>
+                <li>Step 4: Divide 2 by 2. The quotient is 1, and the remainder is 0. (2 ÷ 2 = 1 remainder 0)</li>
+                <li>Step 5: Divide 1 by 2. The quotient is 0, and the remainder is 1. (1 ÷ 2 = 0 remainder 1)</li>
+            </ol>
+            <div class="binarycontainer">
+                <h1>Decimal to Binary Challenge</h1>
+                <p>Enter a decimal number:</p>
+                <input type="number" id="decimalInput">
+                <button onclick="convertToBinary()">Convert to Binary</button>
+                <p>Binary Equivalent: <span id="binaryOutput"></span></p>
+                <p class="explanation">To convert a decimal number to binary, repeatedly divide the decimal number by 2 and note the remainders, then read the remainders from bottom to top to get the binary equivalent.</p>
+            </div>
+        </section>
+        <section class="section" id="slider" name="slider">
+            <h2 style="text-align:center">Slider Challenge</h2>
+            <div class="slider">
+                <div class="slide active" id="slide1">Make</div>
+                <div class="slide" id="slide2">Me</div>
+                <div class="slide" id="slide3">Go</div>
+                <div class="slide" id="slide4">Backwords</div>
+                <button onclick="nextSlide()">Next</button>
+            </div>            
+        </section>
+    </div>
+   
+    <footer>Before you go, is your console clear?</footer>
+
+    <script type="text/javascript">
+
+        function convertToBinaryy() {
+            const decimalNumber = document.getElementById('decimalInput').value;
+
+            if (!isNaN(decimalNumber)) {
+                const binaryEquivalent = (decimalNumber >>> 0).toString(2);
+                document.getElementById('binaryOutput').innerText = binaryEquivalent;
+            } else {
+                alert('Please enter a valid decimal number!');
+            }
+        }
+
+        let currentBanner = 1;
+
+        function nextSlide() {
+            document.getElementById(`slide${currentBanner}`).classList.remove('active');
+            currentBanner = currentBanner + 1;
+            document.getElementById(`slide${currentBanner}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
